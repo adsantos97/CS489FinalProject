@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ExerciseDice</string>
+    <string name="welcome">Are you ready to EXERCISE?</string>
+
+    <string name="arms">ARMS</string>
+    <string name="legs">LEGS</string>
+    <string name="cardio">CARDIO</string>
+    <string name="core">CORE</string>
+
+    <string name="stats">STATS</string>
 </resources>

@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="blueAccent">#21C6D5</color>
+    <color name="blue">#21C6D5</color>
     <color name="turquoise">#3F8A8E</color>
     <color name="lightTurquoise">#199FAD</color>
     <color name="darkTurquoise">#144449</color>
@@ -12,4 +12,6 @@
     <color name="darkPink">#ECA2A3</color>
     <color name="grey">#5D5D5D</color>
     <color name="lightGrey">#E5E5E5</color>
+    <color name="darkGrey">#606060</color>
+    <color name="white">#FFF</color>
 </resources>

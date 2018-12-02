@@ -1,18 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:textColor="@color/white"
+        android:background="@color/turquoise"
+        android:text="@string/welcome"/>
 
-</android.support.constraint.ConstraintLayout>
+    <TableLayout
+        android:id="@+id/exerciseTable"
+        android:layout_below="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/arms"
+                style="@style/ButtonStyle"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rounded_corner_blue"
+                android:text="@string/arms"
+                android:onClick="toViewTwo"
+                android:layout_column="0"/>
+
+            <Button
+                android:id="@+id/legs"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                style="@style/ButtonStyle"
+                android:background="@drawable/rounded_corner_darkpink"
+                android:text="@string/legs"
+                android:layout_column="1"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/core"
+                style="@style/ButtonStyle"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rounded_corner_blue"
+                android:text="@string/core"
+                android:onClick="toViewTwo"
+                android:layout_column="0"/>
+
+            <Button
+                android:id="@+id/cardio"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                style="@style/ButtonStyle"
+                android:background="@drawable/rounded_corner_darkpink"
+                android:text="@string/cardio"
+                android:layout_column="1"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/stats"
+        style="@style/ButtonStyle"
+        android:layout_below="@+id/exerciseTable"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner_darkgrey"
+        android:text="@string/stats"/>
+
+</RelativeLayout>
