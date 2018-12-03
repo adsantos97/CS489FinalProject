@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CoreActivity"
+    >
+
+    <ImageView
+        android:id="@+id/dice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dice4"/>
+
+    <ImageView
+        android:id="@+id/dice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/dice1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/core1"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dice2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/darkTurquoise"
+        android:background="@drawable/rounded_corner_blue"
+        android:text="@string/back"
+        android:onClick="goBack"/>
+
+</RelativeLayout>

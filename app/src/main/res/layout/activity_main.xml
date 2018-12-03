@@ -45,7 +45,7 @@
                 android:layout_marginLeft="20dp"
                 android:background="@drawable/rounded_corner_blue"
                 android:text="@string/arms"
-                android:onClick="toViewTwo"
+                android:onClick="toArms"
                 android:layout_column="0"/>
 
             <Button
@@ -57,6 +57,7 @@
                 style="@style/ButtonStyle"
                 android:background="@drawable/rounded_corner_darkpink"
                 android:text="@string/legs"
+                android:onClick="toLegs"
                 android:layout_column="1"/>
 
         </TableRow>
@@ -78,7 +79,7 @@
                 android:layout_marginLeft="20dp"
                 android:background="@drawable/rounded_corner_blue"
                 android:text="@string/core"
-                android:onClick="toViewTwo"
+                android:onClick="toCore"
                 android:layout_column="0"/>
 
             <Button
@@ -90,6 +91,7 @@
                 style="@style/ButtonStyle"
                 android:background="@drawable/rounded_corner_darkpink"
                 android:text="@string/cardio"
+                android:onClick="toCardio"
                 android:layout_column="1"/>
 
         </TableRow>
