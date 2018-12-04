@@ -127,10 +127,10 @@
         android:textStyle="bold"
         android:typeface="normal"
         android:textColor="@color/turquoise"
-        android:text="@string/today_mood"/>
+        android:text="@string/mood"/>
 
     <RatingBar
-        android:id="@+id/today_mood"
+        android:id="@+id/mood"
         android:layout_below="@+id/today_text"
         style="@style/RatingBar"/>
 
@@ -138,7 +138,7 @@
         android:id="@+id/update_mood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/today_mood"
+        android:layout_below="@+id/mood"
         android:layout_marginTop="5dp"
         android:layout_centerHorizontal="true"
         android:textSize="10sp"

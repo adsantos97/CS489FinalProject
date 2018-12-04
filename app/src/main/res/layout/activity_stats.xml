@@ -22,24 +22,4 @@
         android:background="@color/lightTurquoise"
         android:text="@string/stats"/>
 
-    <TextView
-        android:id="@+id/yesterday_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/stats_welcome"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:typeface="normal"
-        android:textColor="@color/white"
-        android:text="@string/yesterday_mood"/>
-
-    <RatingBar
-        android:id="@+id/yesterday_mood"
-        android:layout_below="@+id/yesterday_text"
-        style="@style/RatingBar"
-        android:isIndicator="true"/>
-
 </RelativeLayout>

@@ -10,7 +10,6 @@
     <string name="stats">STATS</string>
     <string name="back">BACK</string>
 
-    <string name="today_mood">Today\'s Mood</string>
-    <string name="yesterday_mood">Yesterday\'s Mood</string>
+    <string name="mood">Mood</string>
     <string name="update">Update Mood</string>
 </resources>
