@@ -40,6 +40,10 @@ public class LegsActivity extends Activity {
             }
 
         });
+
+        // toast
+        Toast toast = Toast.makeText(this, "Shake Me!", Toast.LENGTH_LONG);
+        toast.show();
     }
 
     @Override
@@ -66,12 +70,13 @@ public class LegsActivity extends Activity {
 
         ImageView reps = (ImageView) findViewById(R.id.dice1);
         ImageView exercise = (ImageView) findViewById(R.id.dice2);
+        ImageView exerciseIllustration = (ImageView) findViewById(R.id.exercise);
         repsDie.roll();
         exerciseDie.roll();
         Log.w("MA", "repsDie: " + repsDie.getValue());
         Log.w("MA", "exerciseDie: " + exerciseDie.getValue());
         updateRepImage(reps);
-        updateExerciseImage(exercise);
+        updateExerciseImage(exercise, exerciseIllustration);
     }
 
     /**
@@ -104,26 +109,32 @@ public class LegsActivity extends Activity {
     /**
      * Updates the image depending on the state of the exercise die.
      */
-    private void updateExerciseImage(ImageView v) {
+    private void updateExerciseImage(ImageView v1, ImageView v2) {
         Log.w("MA", "in method exerciseDie: " + exerciseDie.getValue());
         switch (exerciseDie.getValue()) {
             case 1:
-                v.setImageResource(R.drawable.legs1);
+                v1.setImageResource(R.drawable.legs1);
+                v2.setImageResource(R.drawable.squat_jack);
                 break;
             case 2:
-                v.setImageResource(R.drawable.legs2);
+                v1.setImageResource(R.drawable.legs2);
+                v2.setImageResource(R.drawable.reverse_leg_lift);
                 break;
             case 3:
-                v.setImageResource(R.drawable.legs3);
+                v1.setImageResource(R.drawable.legs3);
+                v2.setImageResource(R.drawable.squat);
                 break;
             case 4:
-                v.setImageResource(R.drawable.legs4);
+                v1.setImageResource(R.drawable.legs4);
+                v2.setImageResource(R.drawable.twisting_lunge);
                 break;
             case 5:
-                v.setImageResource(R.drawable.legs5);
+                v1.setImageResource(R.drawable.legs5);
+                v2.setImageResource(R.drawable.clock_lunge);
                 break;
             case 6:
-                v.setImageResource(R.drawable.legs6);
+                v1.setImageResource(R.drawable.legs6);
+                v2.setImageResource(R.drawable.rocket_jump);
                 break;
         }
     }

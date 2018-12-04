@@ -40,6 +40,10 @@ public class CardioActivity extends Activity {
             }
 
         });
+
+        // toast
+        Toast toast = Toast.makeText(this, "Shake Me!", Toast.LENGTH_LONG);
+        toast.show();
     }
 
     @Override
@@ -66,12 +70,13 @@ public class CardioActivity extends Activity {
 
         ImageView reps = (ImageView) findViewById(R.id.dice1);
         ImageView exercise = (ImageView) findViewById(R.id.dice2);
+        ImageView exerciseIllustration = (ImageView) findViewById(R.id.exercise);
         repsDie.roll();
         exerciseDie.roll();
         Log.w("MA", "repsDie: " + repsDie.getValue());
         Log.w("MA", "exerciseDie: " + exerciseDie.getValue());
         updateRepImage(reps);
-        updateExerciseImage(exercise);
+        updateExerciseImage(exercise, exerciseIllustration);
     }
 
     /**
@@ -104,26 +109,32 @@ public class CardioActivity extends Activity {
     /**
      * Updates the image depending on the state of the exercise die.
      */
-    private void updateExerciseImage(ImageView v) {
+    private void updateExerciseImage(ImageView v1, ImageView v2) {
         Log.w("MA", "in method exerciseDie: " + exerciseDie.getValue());
         switch (exerciseDie.getValue()) {
             case 1:
-                v.setImageResource(R.drawable.cardio1);
+                v1.setImageResource(R.drawable.cardio1);
+                v2.setImageResource(R.drawable.jumping_jack);
                 break;
             case 2:
-                v.setImageResource(R.drawable.cardio2);
+                v1.setImageResource(R.drawable.cardio2);
+                v2.setImageResource(R.drawable.burpee);
                 break;
             case 3:
-                v.setImageResource(R.drawable.cardio3);
+                v1.setImageResource(R.drawable.cardio3);
+                v2.setImageResource(R.drawable.tuck_jumps);
                 break;
             case 4:
-                v.setImageResource(R.drawable.cardio4);
+                v1.setImageResource(R.drawable.cardio4);
+                v2.setImageResource(R.drawable.sky_kicks);
                 break;
             case 5:
-                v.setImageResource(R.drawable.cardio5);
+                v1.setImageResource(R.drawable.cardio5);
+                v2.setImageResource(R.drawable.power_jacks);
                 break;
             case 6:
-                v.setImageResource(R.drawable.cardio6);
+                v1.setImageResource(R.drawable.cardio6);
+                v2.setImageResource(R.drawable.ski_jumper);
                 break;
         }
     }

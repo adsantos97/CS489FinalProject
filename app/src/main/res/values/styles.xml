@@ -18,4 +18,49 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
+    <style name="BackButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/darkTurquoise</item>
+        <item name="android:background">@drawable/rounded_corner_blue</item>
+        <item name="android:text">@string/back</item>
+        <item name="android:onClick">goBack</item>
+    </style>
+
+    <style name="DiceOne">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="DiceTwo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_below">@id/dice1</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="ExerciseImage">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/dice2</item>
+    </style>
+
+    <style name="RatingBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:numStars">5</item>
+    </style>
+
 </resources>
