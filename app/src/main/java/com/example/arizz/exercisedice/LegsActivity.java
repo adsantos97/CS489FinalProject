@@ -77,6 +77,15 @@ public class LegsActivity extends Activity {
         Log.w("MA", "exerciseDie: " + exerciseDie.getValue());
         updateRepImage(reps);
         updateExerciseImage(exercise, exerciseIllustration);
+
+        // add to current score and update high score if necessary
+        Exercise ex = MainActivity.ex;
+        Log.w("MA", "Before +1: " + ex.getCurrentExercises());
+        int current = ex.getCurrentExercises();
+        ex.setCurrentExercises(current+1);
+        ex.setHighestExercises(ex.getCurrentExercises());
+        ex.setPreferences(this);
+        Log.w("MA", "After +1: " + ex.getCurrentExercises());
     }
 
     /**

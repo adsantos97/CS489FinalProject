@@ -17,10 +17,14 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ex = new Exercise(this);
+
         setContentView(R.layout.activity_main);
 
         mood = (RatingBar) findViewById(R.id.mood);
         mood.setRating((float) ex.getMood());
+
+        ex.setCurrentExercises(0);
+        ex.setPreferences(this);
     }
 
     /**
@@ -103,7 +107,6 @@ public class MainActivity extends Activity {
      * @param v the view
      */
     public void toStats(View v) {
-
         /** Create an intent to start a new activity */
         Intent intent = new Intent(this, StatsActivity.class);
         this.startActivity(intent);

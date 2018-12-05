@@ -22,4 +22,74 @@
         android:background="@color/lightTurquoise"
         android:text="@string/stats"/>
 
+    <LinearLayout
+        android:id="@+id/ad_view"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stats_welcome"
+        android:background="@color/grey">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/highest"
+        android:layout_below="@+id/stats_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:textColor="@color/grey"
+        android:text="@string/highest_txt"/>
+
+    <TextView
+        android:id="@+id/highest_score"
+        android:layout_below="@+id/highest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:textColor="@color/white"
+        android:text="@string/default_high"/>
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_below="@+id/highest_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:textColor="@color/grey"
+        android:text="@string/current_txt"/>
+
+    <TextView
+        android:id="@+id/current_score"
+        android:layout_below="@+id/current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:textColor="@color/white"
+        android:text="@string/default_current"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_below="@+id/current_score"
+        style="@style/BackButton2"/>
+
 </RelativeLayout>

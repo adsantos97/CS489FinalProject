@@ -32,6 +32,19 @@
         <item name="android:onClick">goBack</item>
     </style>
 
+    <style name="BackButton2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/darkTurquoise</item>
+        <item name="android:background">@drawable/rounded_corner_blue</item>
+        <item name="android:text">@string/back</item>
+        <item name="android:onClick">goBack</item>
+    </style>
+
     <style name="DiceOne">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

@@ -7,6 +7,7 @@
         android:required="true" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--uses-permission android:name="android.permission.INTERNET"/--> <!--advertisement-->
 
     <application
         android:allowBackup="true"
@@ -15,6 +16,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!-- meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" / -->
+
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
@@ -39,6 +44,12 @@
         <activity
             android:name=".StatsActivity"
             android:screenOrientation="portrait"></activity>
+
+        <!-- for advertisement-->
+        <!-- activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" / -->
     </application>
 
 </manifest>
