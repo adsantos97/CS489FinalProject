@@ -9,8 +9,11 @@ import android.widget.TextView;
 // import android.widget.LinearLayout;
 
 // import com.google.android.gms.ads.*;
+import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
+import com.google.android.gms.ads.doubleclick.PublisherAdView;
 
 public class StatsActivity extends Activity {
+    private PublisherAdView mPublisherAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,12 @@ public class StatsActivity extends Activity {
         */
         update();
 
+        // banner ad
+        mPublisherAdView = findViewById(R.id.publisherAdView);
+        PublisherAdRequest adRequest = new PublisherAdRequest.Builder().build();
+        // add .addTestDevice("") if want to test on device
+        // search Use AdRequest.Builder in logcat
+        mPublisherAdView.loadAd(adRequest);
     }
 
     /**

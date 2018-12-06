@@ -22,14 +22,14 @@
         android:background="@color/lightTurquoise"
         android:text="@string/stats"/>
 
-    <LinearLayout
+    <!--LinearLayout
         android:id="@+id/ad_view"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/stats_welcome"
         android:background="@color/grey">
-    </LinearLayout>
+    </LinearLayout-->
 
     <TextView
         android:id="@+id/highest"
@@ -91,5 +91,17 @@
         android:id="@+id/back"
         android:layout_below="@+id/current_score"
         style="@style/BackButton2"/>
+
+    <com.google.android.gms.ads.doubleclick.PublisherAdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/publisherAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="/6499/example/banner">
+    </com.google.android.gms.ads.doubleclick.PublisherAdView>
 
 </RelativeLayout>
